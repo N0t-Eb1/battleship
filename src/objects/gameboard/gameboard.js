@@ -54,7 +54,7 @@ export default class Gameboard {
 
         if (target.ship) {
             target.ship.hit();
-            if (target.ship.isSunk()) this.#sunkShips++;
+            if (target.ship.isSunk) this.#sunkShips++;
         }
     }
 

@@ -26,15 +26,15 @@ describe("Ship", () => {
     it("isSunk() should return false if hits < length", () => {
         cruiser.hit();
         cruiser.hit();
-        expect(cruiser.isSunk()).toBe(false);
+        expect(cruiser.isSunk).toBe(false);
     });
 
     it("isSunk() should return true if hits equal length", () => {
         for (let i = 1; i <= 3; i++) cruiser.hit();
-        expect(cruiser.isSunk()).toBe(true);
+        expect(cruiser.isSunk).toBe(true);
     });
 
     it("should not be sunk initially", () => {
-        expect(cruiser.isSunk()).toBe(false);
+        expect(cruiser.isSunk).toBe(false);
     });
 });

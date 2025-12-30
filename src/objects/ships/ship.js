@@ -10,7 +10,7 @@ export default class Ship {
         this.#hits++;
     }
 
-    isSunk() {
+    get isSunk() {
         return this.#hits === this.#length;
     }
 
